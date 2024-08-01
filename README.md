@@ -10,7 +10,6 @@ The CoAP server handles authentication and token issuance, and it collects data 
 - **Directory**: `server/`
 - **Main Script**: `coap_server.py`
 - **Configuration File**: `coap_server.conf`
-- **Credentials File**: `credentials.txt`
 
 ### Agent
 The agent is designed to run on lightweight Linux systems like Raspbian for IoT purposes, collecting logs and system information to send to the central server.
