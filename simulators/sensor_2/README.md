@@ -24,7 +24,7 @@ Make sure to update these settings to match your environment and server configur
 
 ```sh
 sudo apt-get update 
-sudo apt-get install python3 python3-pip inotify-tools
+sudo apt-get install python3 python3-pip
 ```
 ### Python Dependencies
 * aiocoap
