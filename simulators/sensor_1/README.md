@@ -23,7 +23,7 @@ Ensure you have Python 3 installed. You can do this with the following commands:
 
 ```sh
 sudo apt-get update 
-sudo apt-get install python3 python3-pip inotify-tools
+sudo apt-get install python3 python3-pip
 ```
 ### Python Dependencies
 * aiocoap
