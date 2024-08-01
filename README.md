@@ -1,4 +1,3 @@
-# linux-coap-log-collector
 # Linux CoAP Log Collector
 
 This repository contains the components of a log collection system using the CoAP protocol for Linux-based environments. It includes a CoAP server with authentication and token-based communication, a Linux-based agent for log collection and system monitoring, and sensor simulators for testing purposes.
