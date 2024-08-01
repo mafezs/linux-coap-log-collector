@@ -29,8 +29,12 @@ sudo apt-get install python3 python3-pip inotify-tools
 ### Python Dependencies
 * aiocoap
 * configparser
-1. Install the required Python packages with the following command:
-
+1. Clone the repository:
+```sh
+git clone https://github.com/mafezs/linux-coap-log-collector.git
+cd linux-coap-log-collector/simulators/sensor_2/
+```
+2. Install the required Python packages:
 ```sh
 pip3 install -r requirements.txt
 ```
@@ -38,6 +42,6 @@ pip3 install -r requirements.txt
 1. Ensure the sensor.conf file is properly configured.
 2. Start the CoAP sensor:
 ```sh
-python3 sensor.py
+python3 sensor_2.py
 ```
 This will start the sensor, which will begin listening for incoming CoAP POST requests and log adjustments to the specified log file in the configuration file.
