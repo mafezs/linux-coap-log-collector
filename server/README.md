@@ -53,6 +53,6 @@ pip3 install -r requirements.txt
 1. Ensure the coap_server.conf and credentials.txt files are properly configured.
 2. Start the CoAP server:
 
-``sh
+```sh
 python3 coap_server.py
 ```
