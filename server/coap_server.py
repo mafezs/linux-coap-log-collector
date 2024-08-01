@@ -41,8 +41,14 @@ def load_credentials():
     credentials = {}
     with open('credentials.txt', 'r') as f:
         for line in f:
-            username, hashed_password = line.strip().split(':')
-            credentials[username] = hashed_password
+            line = line.strip()
+            if line and not line.startswith('#'):  # Ignore empty lines and comments
+                parts = line.split(':')
+                if len(parts) == 2:
+                    username, hashed_password = parts
+                    credentials[username] = hashed_password
+                else:
+                    print(f"Warning: Ignoring invalid credential line: {line}")
     return credentials
 
 credentials = load_credentials()
@@ -176,13 +182,13 @@ class PostResource(Resource):
 async def main():
     # Start the CoAP server
     root = Site()
-    root.add_resource(('auth',), AuthResource())  # Authentication resource
-    root.add_resource((URI_PATH_PART1, URI_PATH_PART2), PostResource())  # Data submission resource
+    root.add_resource(('auth',), AuthResource())
+    root.add_resource((URI_PATH_PART1, URI_PATH_PART2), PostResource())
 
     try:
         context = await Context.create_server_context(root, bind=(SERVER_IP, SERVER_PORT))
         print(f"CoAP server started at {SERVER_IP}:{SERVER_PORT}")
-        await asyncio.Future()  # Keep server running
+        await asyncio.Future()
     except OSError as e:
         print(f"Error: {e}")
     except Exception as e:
