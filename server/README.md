@@ -56,11 +56,3 @@ pip3 install -r requirements.txt
 ``sh
 python3 coap_server.py
 ```
-
-
-
-### requirements.txt
-
-```plaintext
-aiocoap==0.4b3
-configparser==5.0.2
