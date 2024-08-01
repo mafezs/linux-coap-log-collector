@@ -1,0 +1,2 @@
+aiocoap==0.4b3
+configparser==5.0.2
