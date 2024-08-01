@@ -40,7 +40,7 @@ Each component (server, agent, sensors) has its own requirements.txt file, which
 ```sh
 pip3 install -r requirements.txt
 ```
-## Setup Instructions
+## Setup 
 1. Clone the repository:
 ```sh
 git clone https://github.com/mafezs/linux-coap-log-collector.git
