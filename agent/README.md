@@ -36,8 +36,8 @@ sudo apt-get install python3 python3-pip inotify-tools
 
 1. Clone the repository:
 ```sh
-git clone https://github.com/yourusername/coap-agent.git
-cd agent/
+git clone [https://github.com/yourusername/coap-agent.git](https://github.com/mafezs/linux-coap-log-collector.git)
+cd linux-coap-log-collector/agent/
 ```
 2. Install the required Python packages:
 ```sh
