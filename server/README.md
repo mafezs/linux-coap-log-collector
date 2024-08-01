@@ -40,8 +40,8 @@ sudo apt-get install python3 python3-pip inotify-tools
 
 ```sh
 Copy code
-git clone https://github.com/yourusername/coap-server.git
-cd server/
+git clone https://github.com/mafezs/linux-coap-log-collector.git
+cd linux-coap-log-collector/server/
 ```
 2. Install the required Python packages:
 
