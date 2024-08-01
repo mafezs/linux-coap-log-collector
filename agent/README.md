@@ -45,7 +45,8 @@ pip3 install -r requirements.txt
 ```
 ## Usage
 1. Ensure the coap_agent.conf file is properly configured.
-2. Start the CoAP agent:
+2. Make sure you give all log files you specified in coap_agent.conf the right permissions of reading and writing
+3. Start the CoAP agent:
 ```sh
 python3 coap_agent.py
 ```
