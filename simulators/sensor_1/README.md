@@ -30,8 +30,8 @@ sudo apt-get install python3 python3-pip inotify-tools
 * configparser
 1. Clone the repository:
 ```sh
-git clone https://github.com/yourusername/coap-sensor1.git
-cd simulators/sensor_1/
+git clone https://github.com/mafezs/linux-coap-log-collector.git
+cd linux-coap-log-collector/simulators/sensor_1/
 ```
 2. Install the required Python packages:
 ```sh
